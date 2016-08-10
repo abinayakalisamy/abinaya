@@ -1,0 +1,65 @@
+package hello;
+
+
+import java.util.Scanner;
+
+public class Dates1 {
+	int month;
+    int day;
+    int year;
+	public Dates1()
+	{
+		month=0;
+		day=0;
+		year=0;
+	}
+	public void setMonth1(int a)
+	{
+		this.month=a;
+	}
+	public void setDay1(int b)
+	{
+		this.day=b;
+	}
+	public void setYear1(int c)
+	{
+	    this.year=c;	
+	}
+	Scanner i=new Scanner(System.in);
+	public void getMonth1()
+	{
+		int m=i.nextInt();
+		setMonth1(m);
+		
+	}
+	public void getDay1()
+	{
+		int d=i.nextInt();
+		setDay1(d);
+	}
+	public void getYear1()
+	{
+		int y=i.nextInt();
+		setYear1(y);
+	}
+	public void displayDate()
+	{
+		System.out.print("Date in<mm/dd/yy> format:"+month+"/"+day+"/"+year);
+	}
+	public static void main(String[] args) {
+		    Dates1 s=new Dates1();
+	       System.out.println("enter the month:");
+	       s.getMonth1();
+	       System.out.println();
+	       System.out.println("enter the day:");
+	       s.getDay1();
+	       System.out.println();
+	       System.out.println();
+	       System.out.println("enter the year:");
+	       s.getYear1();
+	       System.out.println();
+	       s.displayDate();
+
+	}
+
+}
